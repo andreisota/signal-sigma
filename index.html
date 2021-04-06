@@ -20,6 +20,83 @@
 <p><strong>March 22 2020</strong></p>
 
 <p>Another slow day in the markets.</p>
+  
+<h1 id="toc_0">Useful COMMAND LINES</h1>
+
+<p>$    - - <strong>Linux</strong> - -</p>
+
+<blockquote>
+<p>Scan for wi-fi connected devices in current network<br/>
+<code>nmap -sn [adresa locala pana la ultimul range (ex: 198.162.1)].0/24</code></p>
+
+<p>Get current IP address<br/>
+<code>hostname -I</code></p>
+
+<p>Configure settings<br/>
+<code>sudo raspi-config</code></p>
+
+<p>Get list of wi-fi networks available<br/>
+<code>sudo iwlist wlan0 scan</code></p>
+
+<p>Shutdown the system<br/>
+<code>sudo shutdown -h now</code></p>
+
+<p>Test a LED light from console<br/>
+<code>gpio -g mode 21 out</code> (21 is pin nr.)<br/>
+<code>gpio -g write 21 1</code> (pin 21 power on)<br/>
+<code>gpio -g write 21 0</code> (pin 21 power off)</p>
+
+<p>Update System<br/>
+<code>$ sudo apt-get update</code><br/>
+<code>$ sudo apt-get dist-upgrade</code><br/>
+‘sudo apt-get upgrade’</p>
+
+<p>Set system startup commands<br/>
+<code>$ /etc $ sudo nano rc.local</code></p>
+
+<p>Start new VNC machine in 4K<br/>
+<code>$ vncserver -geometry 4096x2160</code></p>
+
+<p>Set console to BASH<br/>
+<code>source ~/.bashrc</code></p>
+</blockquote>
+
+<p>$   - - <strong>Mac OS</strong> - - </p>
+
+<blockquote>
+<p>Copy file across SSH protocol<br/>
+<code>scp /path/to/local/file username@hostname:/path/to/remote/file</code></p>
+</blockquote>
+
+<p>Example: scp /Users/Soty/Desktop/led.py pi@192.168.1.52:~/Desktop<br/>
+<u>SPATIILE SUNT F IMPORTANTE!!!</u></p>
+
+<blockquote>
+<p>List contents of directory<br/>
+<code>ls</code></p>
+
+<p>Change directory / go back<code><br/>
+</code>cd<code></code>cd ..` </p>
+
+<p>Hide folder / unhide folder<br/>
+<code>chflags hidden /Volumes/Soty/Photos<br/>
+andreis-mbp:~ Soty$ chflags nohidden /Volumes/Soty/Photos</code><br/>
+<code>chflags hidden /Volumes/Soty/HDD\ Vechi\ Soty</code></p>
+
+<p>Prioritise a particular process<br/>
+<code></code> check niceness<br/>
+<code>sudo renice -n &quot;-19&quot; -p PID</code> in loc de value punem -20 pt highest priority</p>
+
+<p>Set aliases in terminal<br/>
+<code>nano ~/.zshrc</code><br/>
+<code>nano ~/.bashrc</code></p>
+
+<p>scp /Users/Soty/Documents/Python/alpha_vantage_trading/trading_pi.py pi@192.168.1.3:~/Desktop<br/>
+scp /Users/Soty/Documents/Python/alpha_vantage_trading/get_hist_pi.py pi@192.168.1.3:~/Desktop<br/>
+scp /Users/Soty/Documents/Python/alpha_vantage_trading/mailer_pi.py pi@192.168.1.3:~/Desktop<br/>
+scp /Users/Soty/Desktop/watchlist.csv pi@192.168.1.3:~/Desktop</p>
+</blockquote>
+
 
 </body>
 </html>
