@@ -7,3 +7,6 @@ p {
   color: white; /* same as #bb5588 */
   font-family: "Lucida Console", "Courier New", monospace;
 }
+
+
+div.content { width: 1000px }
